@@ -10,13 +10,13 @@
         <input type="text" id="payee" placeholder="Payee Address">
         <input type="number" id="amount" placeholder="Amount">
         <button class="btn" onclick="transfer()">Transfer Money</button>
-	    <button class="btn" onclick="view_transaction()">View Transaction</button>
-		<p id = "view_payer"></p>
-		<p id = "view_payee"></p>
-		<p id = "view_amount"></p>
+	    <button class="btn" onclick="view_transaction()">View Transaction</button>	
         <form action="/main" method="post">
             <input type="submit" value="Main">
         </form>
+		<p id = "view_payer"></p>
+		<p id = "view_payee"></p>
+		<p id = "view_amount"></p>
         <script src ="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
         <script>                
             const contractAddress = "0x3d19905a4af19469ab3f75296e1ee356159a7e2d";
